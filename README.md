@@ -46,9 +46,9 @@ Follow the steps from SSV documentation to generate the encrypted key: https://d
 
 Create the configfile according to the SSV documentation and point it to your EL &  CL clients: https://docs.ssv.network/operator-user-guides/operator-node/installation#create-configuration-file
 
-copy the encrypted key & config to the target machine and set the path in the ansible playbook.
+copy the encrypted key & config to the target machine and set the path in the ansible playbook (default path: /data/ssv).
 
-EXAMPLE (both file are in the a folder called "ssv" beside your playbook):
+EXAMPLE (both files are in the a folder called "ssv" beside your playbook):
 
 ```bash
 - name: Copy ssv configs to remote server
