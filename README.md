@@ -4,7 +4,7 @@ This is an Ansible role for installing and configuring the SSV`s DVT solution.
 
 ## Description
 
-This role installs and configures the SSV`s DVT solution on a target machine. The role is designed to be used in anexisting Ethereum validator setup.
+This role installs and configures the SSV`s DVT solution on a target machine. The role is designed to be used in an existing Ethereum validator setup.
 
 ## Getting Started
 
