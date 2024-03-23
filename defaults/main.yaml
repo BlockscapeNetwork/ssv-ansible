@@ -1,0 +1,23 @@
+ssv_user: ssv
+ssv_datadir: /data/ssv
+ssv_announced_ip: "{{ ansible_host }}"
+
+ssv_cleanup: false # when set to "true" it will remove the container
+
+ssv_container_name: ssv-node
+ssv_container_image: bloxstaking/ssv-node:v1.2.3
+ssv_container_env: CONFIG_PATH=/data/config.yaml
+ssv_container_ports:
+  - "13000:13000"
+  - "12001:12001/udp"
+  - "15000:15000"
+ssv_container_volumes:
+  - "{{ ssv_datadir }}:/data"
+ssv_container_security_opts: []
+ssv_container_stop_timeout: "300"
+ssv_container_networks:
+  - name: shared
+ssv_container_command: make BUILD_PATH="/go/bin/ssvnode" start-node &&
+
+# Default image pull policy
+ssv_container_pull: false

@@ -1,0 +1,7 @@
+- name: Remove SSV containers
+  community.docker.docker_container:
+    name: "{{ item }}"
+    state: absent
+  loop:
+    - "{{ ssv_container_name }}"
+    - "{{ ssv_container_name }}-init"

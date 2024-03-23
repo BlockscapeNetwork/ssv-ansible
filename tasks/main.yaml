@@ -1,0 +1,7 @@
+- name: Setup ssv
+  ansible.builtin.import_tasks: setup.yaml
+  when: not ssv_cleanup
+
+- name: Cleanup ssv
+  ansible.builtin.import_tasks: cleanup.yaml
+  when: ssv_cleanup
