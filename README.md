@@ -21,7 +21,7 @@ docker, pip
 
 ### Installing
 
-Steps to get your project running on someone else's system.
+Example Playbook with use of [EthPandaOps Ansible Collection](https://github.com/ethpandaops/ansible-collection-general/tree/master/roles/ethereum_node):
 
 ```bash
 - hosts: <Your-Linux-Host>
