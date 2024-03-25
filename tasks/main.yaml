@@ -1,3 +1,4 @@
+---
 - name: Setup ssv
   ansible.builtin.import_tasks: setup.yaml
   when: not ssv_cleanup
