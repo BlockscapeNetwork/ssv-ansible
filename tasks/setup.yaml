@@ -1,3 +1,4 @@
+---
 - name: Add ssv user
   ansible.builtin.user:
     name: "{{ ssv_user }}"

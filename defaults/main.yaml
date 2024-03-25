@@ -1,3 +1,4 @@
+---
 ssv_user: ssv
 ssv_datadir: /data/ssv
 ssv_announced_ip: "{{ ansible_host }}"

@@ -1,3 +1,4 @@
+---
 - name: Remove SSV containers
   community.docker.docker_container:
     name: "{{ item }}"
